@@ -128,6 +128,7 @@ if False:
     ax4.grid()
     plt.show()
 
+
 # %% Example: Transform normal variable to uniform
 
 N = 1e5  # number of samples
@@ -139,7 +140,6 @@ u = norm_cdf(x)
 
 fg5, ax5 = plt.subplots(1, 2, sharey=True, tight_layout=True)
 
-# We can set the number of bins with the *bins* keyword argument.
 Nbins = 100
 ax5[0].hist(x, bins=Nbins)
 ax5[1].hist(u, bins=Nbins)
@@ -159,13 +159,13 @@ u = norm_icdf(x)
 
 fg6, ax6 = plt.subplots(1, 2, sharey=True, tight_layout=True)
 
-# We can set the number of bins with the *bins* keyword argument.
 Nbins = 100
 ax6[0].hist(x, bins=Nbins)
 ax6[1].hist(u, bins=Nbins)
 fg6.suptitle(t='Transforming uniform to normal.')
 
 plt.show()
+
 
 # %% Example: Transform normal variable to triangular
 
@@ -179,7 +179,6 @@ u = triang_icdf(v)
 
 fg7, ax7 = plt.subplots(1, 2, sharey=True, tight_layout=True)
 
-# We can set the number of bins with the *bins* keyword argument.
 Nbins = 100
 ax7[0].hist(x, bins=Nbins)
 ax7[1].hist(u, bins=Nbins)
@@ -187,4 +186,3 @@ fg7.suptitle(t='Transforming normal to triangular.')
 
 plt.show()
 
-# %%
