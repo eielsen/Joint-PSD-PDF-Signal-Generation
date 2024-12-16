@@ -11,7 +11,7 @@ import numpy as np
 import math
 import matplotlib.pyplot as plt
 from scipy import signal
-import control as ct
+#import control as ct
 
 
 def fir_filter_ls(H, p):
@@ -69,7 +69,7 @@ def main():
 
     match 1:
         case 1:
-            sys = ct.drss(5, outputs=1, inputs=1)  # random, stable LTI system
+            #sys = ct.drss(5, outputs=1, inputs=1)  # random, stable LTI system
             Hss = signal.dlti(sys.A, sys.B, sys.C, sys.D, dt=1)
             wH_fr, H_fr = signal.dfreqresp(Hss, w)
         case 2:
